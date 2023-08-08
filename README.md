@@ -73,11 +73,12 @@ Read from STDIN the filename (string) of the compressed file.
 Read the information from the compressed file.
 
 Create n POSIX threads (where n is the number of symbols to decompress). Each child thread executes the following tasks:
+
          - Receives the Huffman tree and the information about the symbol to decompress (binary code and list of positions) from the main thread.
 
-          - Uses the Huffman tree to determine the character from the original message based on the binary code.
+         - Uses the Huffman tree to determine the character from the original message based on the binary code.
 
-          - Stores the decompressed character (as many times as needed based on the list of positions) on a memory location accessible by the main thread.
+         - Stores the decompressed character (as many times as needed based on the list of positions) on a memory location accessible by the main thread.
 
 Print the original message. For the compressed file above, the expected original message is:
 
