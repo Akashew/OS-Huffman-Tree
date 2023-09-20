@@ -1,4 +1,4 @@
-# OS-HW1
+# OS-Huffman Tree
 
 For this assignment, you will create a multithreaded Huffman decompressor (https://en.wikipedia.org/wiki/Huffman_coding).
 
